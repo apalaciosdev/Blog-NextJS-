@@ -5,5 +5,21 @@ date: '2021-11-22'
 
 # Hola mundo
 
-Primer post con un episodio de Spotify:
-<Podcast episode="52KMznI6l9x4MoZr04uIy0" />
+Sis gg:
+<CodeVisualizer language="js" code="
+export default function CodeVisualizer({ code, language }) {
+  useEffect(() => {
+    Prism.manual = true;
+    Prism.highlightAll();
+  }, []);
+  return (
+    <div className=code>
+      <pre className='code code-css'>
+        <code className={`language-${language}`}>{code}</code>
+      </pre>
+    </div>
+  );
+}
+"
+  
+/>

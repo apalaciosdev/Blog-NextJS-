@@ -3,8 +3,8 @@ import { MDXRemote } from 'next-mdx-remote'
 import MDXComponents from '../components/MDXComponents'
 
 export default function Post({ source, frontmatter }) {
-  return <MDXRemote {...source} components={MDXComponents}/>
-  
+  return (
+    <MDXRemote {...source} components={MDXComponents}/>)
 }
 
 export async function getStaticProps({ params }){
