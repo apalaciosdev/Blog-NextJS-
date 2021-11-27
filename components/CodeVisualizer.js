@@ -1,6 +1,22 @@
 import React, { useEffect } from "react";
 import Prism from "prismjs";
 import "prismjs/themes/prism-tomorrow.css";
+import styled from "styled-components";
+import px2vw from '../utils/px2vw';
+
+
+const Div = styled.div`
+
+  
+
+`
+
+
+const Pre = styled.pre`
+  border-radius: 8px;
+
+
+`;
 
 
 
@@ -10,10 +26,10 @@ export const CodeVisualizer = ({ code, language }) => {
     Prism.highlightAll();
   }, []);
   return (
-    <div className="code">
-      <pre className="code code-css">
+    <Div>
+      <Pre>
         <code className={`language-${language}`}>{code}</code>
-      </pre>
-    </div>
+      </Pre>
+    </Div>
   );
 }

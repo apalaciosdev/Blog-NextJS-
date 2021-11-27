@@ -1,0 +1,43 @@
+---
+title: 'Editable paragraph'
+date: '2021-11-27'
+---
+
+# Editable paragraph
+
+In this post we learn to create and implement an editable paragraph in our code using **react-addons-update**.
+
+In these examples we are going to change a state that cointains an array with objects inside.
+
+We have 3 ways to implement it.
+
+
+
+
+## 1.- Using an input 
+
+<CodeVisualizer language="js" code="
+const contentEditable = createRef()
+const [state, setState] = useState(demoData)
+const [bool, setBool] = useState(true)
+
+const handleChange = (evt) => {  
+  const { value } = evt.target;
+  setState(update(state,{
+    [0]:{
+      [2]: {
+        content:  {$set: value}
+      }
+    }
+  }))
+
+};
+
+return(  
+  <div>
+    <textarea type='text' value={state[0][2].content}  onChange={handleChange}></textarea>
+  </div>
+)
+"
+  
+/>
