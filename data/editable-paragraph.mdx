@@ -16,8 +16,9 @@ We have 3 ways to implement it.
 
 ## 1.- Using an input 
 
-<CodeVisualizer language="js" code="
+```js
 const contentEditable = createRef()
+
 const [state, setState] = useState(demoData)
 const [bool, setBool] = useState(true)
 
@@ -30,7 +31,6 @@ const handleChange = (evt) => {
       }
     }
   }))
-
 };
 
 return(  
@@ -38,6 +38,6 @@ return(
     <textarea type='text' value={state[0][2].content}  onChange={handleChange}></textarea>
   </div>
 )
-"
+```
   
-/>
+
