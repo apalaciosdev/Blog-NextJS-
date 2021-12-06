@@ -35,7 +35,11 @@ const handleChange = (evt) => {
 
 return(  
   <div>
-    <textarea type='text' value={state[0][2].content}  onChange={handleChange}></textarea>
+    <textarea 
+      type='text' 
+      value={state[0][2].content}  
+      onChange={handleChange}>
+    </textarea>
   </div>
 )
 ```

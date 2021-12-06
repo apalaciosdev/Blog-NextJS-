@@ -1,29 +1,19 @@
 import { getFileBySlug, getFiles } from '../lib/mdx'
 import { MDXRemote } from 'next-mdx-remote' 
 import MDXComponents from '../components/MDXComponents'
-import { BodyDiv, GeneralDiv } from '../styles/Global'
+import { BodyDiv, GeneralDiv, BodyGen } from '../styles/Global'
 import px2vw from "../utils/px2vw";
 
 export default function Post({ source, frontmatter }) {
   return (
-    <div className="body-gen">
+    <BodyGen>
       <GeneralDiv>
         <BodyDiv>
           <MDXRemote {...source} components={MDXComponents}/>
-
         </BodyDiv>
       </GeneralDiv>
-      <style jsx global>{`
-        .body-gen {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-
-      `}</style>
-    </div>
-      )
-
+    </BodyGen>
+  )
 }
 
 export async function getStaticProps({ params }){
