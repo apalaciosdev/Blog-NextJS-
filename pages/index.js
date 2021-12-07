@@ -6,6 +6,8 @@ import Link from 'next/link'
 import { getAllFilesMetadata } from '../lib/mdx'
 
 export default function Home({ posts }) {
+  console.log('aaa')
+  console.log(posts)
   return (
     <div>
 
@@ -15,13 +17,16 @@ export default function Home({ posts }) {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
+
+
         <main>
           <di>
 
             {posts.map(post => (
               <Link key={post.slug} href={`/${post.slug}`}>
                 <a>
-                  <h2>{post.title} &rarr;</h2>
+                  <Image src={`/images/icons/${post.languaje}.png`} alt='Logo' width={100} height={100}/>
+                  <h2> {post.title} &rarr;</h2>
                   <p>{post.date}</p>
                 </a>
               </Link> 
