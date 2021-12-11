@@ -1,13 +1,14 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import NextLink from "next/link";
+import { PostListItem } from '../components/PostListItem'
+
 
 
 import { getAllFilesMetadata } from '../lib/mdx'
 
 export default function Home({ posts }) {
-  console.log('aaa')
-  console.log(posts)
   return (
     <div>
 
@@ -19,21 +20,19 @@ export default function Home({ posts }) {
 
 
 
-        <main>
-          <di>
+      
 
-            {posts.map(post => (
-              <Link key={post.slug} href={`/${post.slug}`}>
-                <a>
-                  <Image src={`/images/icons/${post.languaje}.png`} alt='Logo' width={100} height={100}/>
-                  <h2> {post.title} &rarr;</h2>
-                  <p>{post.date}</p>
-                </a>
-              </Link> 
-            ))}
-            
-          </di>
-        </main>
+        {posts.map((post) => (
+          <NextLink href={`/${post.slug}`} key={post.slug}>
+            <a>
+              <PostListItem
+                title={post.title}
+                date={post.date}
+                languaje={post.languaje}
+              />
+            </a>
+          </NextLink>
+        ))}
 
     </div>
   )
