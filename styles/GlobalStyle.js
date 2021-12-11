@@ -1,9 +1,16 @@
+import { createGlobalStyle} from "styled-components"
+
+export const GlobalStyle = createGlobalStyle`
+
 html,
 body {
   padding: 0;
   margin: 10px;
   font-family: Segoe UI, -apple-system, BlinkMacSystemFont, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: ${({ theme }) => theme.body};
+  color: ${({ theme }) => theme.text};
+  transition: all 0.50s linear;
 }
 
 a {
@@ -24,7 +31,5 @@ h2{
   border-left: 6px solid #137CBD;
 
 }
-
-.ola{
-  background-color: red;
-}
+ 
+  `
