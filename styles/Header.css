@@ -4,19 +4,19 @@
   left: 0px;
   max-height: 70px;
   width: 100vw;
-  height: 70px;
+  height: 50px;
   z-index: 99;
   display: grid;
   grid-template-areas: "logo nav";
 
   /* Cosmetics */
-  background-color: #282c34;
+  background-color: #202B33;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .Logo {
   grid-area: logo;
-  height: 70px;
+  color: white;
 }
 
 .Nav {
@@ -28,12 +28,12 @@
 }
 .Nav a {
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   transition: 0.5s;
   text-decoration: none;
-  margin-top: -35px;
-  margin-right: -100px;
+  margin-top: -55px;
+  margin-right: -150px;
   z-index: 999;
 }
 .Nav a:hover {
@@ -88,11 +88,13 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    margin-top: -3px;
   }
   .Burger {
     display: inline;
     color: white;
-    margin-top: 5px;
+    font-size: 30px;
+    margin-top: 0px;
   }
   .Nav a {
     color: #fff;

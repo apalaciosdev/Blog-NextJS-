@@ -35,6 +35,8 @@ export const Header = ({theme, toggleTheme}) => {
 
   return (
     <header className="Header">
+
+      <p className="Logo">Logo</p>
       
       <CSSTransition
         in={!isSmallScreen || isNavVisible}
