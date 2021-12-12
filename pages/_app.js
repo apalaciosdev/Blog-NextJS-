@@ -6,6 +6,8 @@ import { lightTheme, darkTheme } from '../styles/Themes';
 import { useDarkMode } from '../helpers/useDarkMode';
 import {ThemeProvider} from "styled-components";
 import '../styles/ToggleButton.css'
+import "../styles/Header.css";
+import { Header } from '../components/Header';
 
 function MyApp({ Component, pageProps }) {
 
@@ -16,8 +18,9 @@ function MyApp({ Component, pageProps }) {
   return(
     <ThemeProvider theme={themeMode}>
       <GlobalStyle/>
-      <Toggle theme={theme} toggleTheme={themeToggler} />
-      <Component {...pageProps} />
+      <Header theme={theme} toggleTheme={themeToggler}/>
+      {/* <Toggle theme={theme} toggleTheme={themeToggler} /> */}
+      <Component {...pageProps} ></Component>
     </ThemeProvider>
   
   )

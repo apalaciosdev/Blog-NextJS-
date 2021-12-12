@@ -4,10 +4,7 @@ import styled from "styled-components"
 import Image from 'next/image'
 
 
-const ToggleContainer = styled.div`
-  width: 10px;
-  
-`;
+
 
 
 
@@ -16,26 +13,14 @@ const Toggle = ({theme,  toggleTheme }) => {
 
     return (
       <div>
-        <ToggleContainer>
-
-       
-        
-
-        
-      
-        
-
-
-        <div class = 'toggle-switch'>
+   
+        <div className = 'toggle-switch'>
             <label>
-                <input type = 'checkbox' onClick={toggleTheme} checked={theme === "light" ? true : false}/>
-                <span class = 'slider'></span>
+                <input type = 'checkbox' onClick={toggleTheme} defaultChecked={theme === "light" ? false : true}/>
+                <span className = 'slider'></span>
             </label>
         </div>
-  
-
-
-        </ToggleContainer>
+        
       </div>
     );
 };
