@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import NextLink from "next/link";
+
 import { PostListItem } from '../components/PostListItem'
 
 
@@ -25,7 +25,7 @@ export default function Home({ posts }) {
       
 
         {posts.map((post) => (
-          <NextLink href={`/${post.slug}`} key={post.slug}>
+          <Link href={`/${post.slug}`} key={post.slug}>
             <a>
               <PostListItem
                 title={post.title}
@@ -33,8 +33,9 @@ export default function Home({ posts }) {
                 languaje={post.languaje}
               />
             </a>
-          </NextLink>
+          </Link>
         ))}
+        
 
        
     </div>

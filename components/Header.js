@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
-import NextLink from "next/link";
+
 
 import { CSSTransition } from "react-transition-group";
 import Image from 'next/image'
 import Toggle from './Toggle';
+
+import Link from "next/link";
 
 export const Header = ({theme, toggleTheme}) => {
   const [isNavVisible, setNavVisibility] = useState(false);
@@ -41,18 +43,19 @@ export const Header = ({theme, toggleTheme}) => {
         unmountOnExit
       >
         <nav className="Nav">
-          {/* <a>
+          <a>
+            
+          <Link href="/"><a> Home </a></Link>
+          </a>
 
-          <NextLink href="/"><a> Home </a></NextLink>
-          </a> */}
-          <a href="/">Home</a>
+    
           <a href="/">Articles</a>
           <a href="/">About</a>
           <span><Toggle theme={theme} toggleTheme={toggleTheme} /></span>
         </nav>
       </CSSTransition>
       <button onClick={toggleNav} className="Burger">
-        🍔
+        ☰
       </button>
     </header>
   );

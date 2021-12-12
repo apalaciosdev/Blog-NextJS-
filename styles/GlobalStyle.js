@@ -6,6 +6,7 @@ html,
 body {
   padding: 0;
   margin: 10px;
+  margin-top: 50px;
   font-family: Segoe UI, -apple-system, BlinkMacSystemFont, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background: ${({ theme }) => theme.body};
