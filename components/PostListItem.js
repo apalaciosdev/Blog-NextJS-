@@ -13,7 +13,7 @@ const StyledDiv = styled.div`
   padding-left: 10px;
   width: 99%;
   :hover{
-    background-color: #e0e0e0;
+    background-color: #535353;
   }
 `
 

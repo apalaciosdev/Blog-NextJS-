@@ -17,6 +17,7 @@
 .Logo {
   grid-area: logo;
   color: white;
+  margin-left: 30px;
 }
 
 .Nav {
@@ -33,7 +34,7 @@
   transition: 0.5s;
   text-decoration: none;
   margin-top: -55px;
-  margin-right: -150px;
+  margin-right: -85px;
   z-index: 999;
 }
 .Nav a:hover {
@@ -94,7 +95,7 @@
     display: inline;
     color: white;
     font-size: 30px;
-    margin-top: 0px;
+    margin-top: -3px;
   }
   .Nav a {
     color: #fff;
