@@ -16,8 +16,8 @@ const Toggle = ({theme,  toggleTheme }) => {
       <div>
         <div className = 'toggle-switch'>
           <label>
-              <input type = 'checkbox' onClick={themeToggler} defaultChecked={theme === "light" ? false : true}/>
-              <span className = 'slider'></span>
+            <input type = 'checkbox' onClick={themeToggler} defaultChecked={theme === "light" ? false : true}/>
+            <span className = 'slider'></span>
           </label>
         </div>
         

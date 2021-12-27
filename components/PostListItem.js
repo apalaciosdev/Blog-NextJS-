@@ -22,24 +22,27 @@ const StyledH3 = styled.h3`
 `
 
 const StyledDiv = styled.div`
-
-display:flex;
-align-items: center;
-justify-content: center;
-padding-rigth: 10px;
-padding-left: 10px;
-width: 99%;
-:hover{
-  background-color: #535353;
-}
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding-rigth: 10px;
+  padding-left: 10px;
+  width: 99%;
+  &:hover{
+    background: ${props => props.theme === 'light' ? '#f0eeee' :  props => props.theme === 'dark' ? '#182026' : '#f0eeee'}
+  } 
 `
 
 
 
 export const PostListItem = ({ title, date, languaje}) => {
 
+  const {theme} = useContext(ThemeContext)
+  console.log(theme)
+
+  
   return (
-    <StyledDiv>      
+    <StyledDiv theme={theme}>      
           <StyledImage src={`/images/icons/${languaje}.png`} alt='Logo' width={40} height={40}/>
           <StyledH3> {title} </StyledH3>
     
