@@ -46,7 +46,7 @@ export const Header = ({theme, toggleTheme}) => {
       >
         <nav className="Nav">
           <a><Link href="/"><a> Home </a></Link></a>
-          <a><Link href="/"><a> Articles </a></Link></a>
+          <a><Link href="/articles"><a> Articles </a></Link></a>
           <a><Link href="/"><a> About </a></Link></a>
           <span><Toggle theme={theme} toggleTheme={toggleTheme} /></span>
         </nav>

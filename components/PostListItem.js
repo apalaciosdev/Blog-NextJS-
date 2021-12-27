@@ -38,15 +38,11 @@ const StyledDiv = styled.div`
 export const PostListItem = ({ title, date, languaje}) => {
 
   const {theme} = useContext(ThemeContext)
-  console.log(theme)
 
-  
   return (
     <StyledDiv theme={theme}>      
-          <StyledImage src={`/images/icons/${languaje}.png`} alt='Logo' width={40} height={40}/>
-          <StyledH3> {title} </StyledH3>
-    
+      <StyledImage src={`/images/icons/${languaje}.png`} alt='Logo' width={40} height={40}/>
+      <StyledH3> {title} </StyledH3>
     </StyledDiv>
-
   );
 };
