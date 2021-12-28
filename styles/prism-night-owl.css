@@ -8,11 +8,10 @@
  pre[class*="language-"] {
    color: #d6deeb;
    font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-   text-align: left;
+ 
    white-space: pre-wrap;
-   word-wrap: break-word;
-   word-spacing: normal;
-   word-break: normal;
+  word-break: break-all;
+ 
    
    line-height: 1.5;
    font-size: 1em;
@@ -30,6 +29,8 @@
    -ms-hyphens: none;
    hyphens: none;
  }
+
+ 
  
  pre[class*="language-"]::-moz-selection,
  pre[class*="language-"] ::-moz-selection,

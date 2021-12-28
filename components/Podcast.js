@@ -1,19 +1,17 @@
-import React from 'react'
+const SIZES = {
+  normal: "232",
+  compact: "152",
+};
 
-export const Podcast = ({ episode }) => {
+export const Podcast = ({ episode, size }) => {
   return (
-    <div>
-      <iframe 
-        src={`https://open.spotify.com/embed/episode/${episode}` }
-        width="300"
-        height="380" 
-        frameBorder="0" 
-        allowtransparency="true" 
-        allow="encrypted-media"
-      >
-
-      </iframe>
-    </div>
-  )
+    <iframe
+      src={`https://open.spotify.com/embed/episode/${episode}`}
+      width="100%"
+     
+      frameBorder="0"
+      allowtransparency="true"
+      allow="encrypted-media"
+    ></iframe>
+  );
 }
-
