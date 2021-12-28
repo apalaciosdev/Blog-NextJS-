@@ -1,15 +1,19 @@
-
-import "../styles/prism-night-owl.css";
-import { GlobalStyle } from '../styles/GlobalStyle';
-import Toggle from '../components/Toggle';
-import { lightTheme, darkTheme, darkColors } from '../styles/Themes';
-import { useDarkMode } from '../helpers/useDarkMode';
-import {ThemeProvider} from "styled-components";
-import '../styles/ToggleButton.css'
-import "../styles/Header.css";
 import { Header } from '../components/Header';
 import { ThemeContext } from '../helpers/themeContext';
-import React, { useEffect, useReducer } from 'react'
+import Toggle from '../components/Toggle';
+import { useDarkMode } from '../helpers/useDarkMode';
+
+
+//Styles
+import { GlobalStyle } from '../styles/GlobalStyle';
+import { lightTheme, darkTheme } from '../styles/Themes';
+import {ThemeProvider} from "styled-components";
+import "../styles/prism-night-owl.css";
+import '../styles/ToggleButton.css'
+import "../styles/Header.css";
+
+
+
 
 function MyApp({ Component, pageProps }) {
 
@@ -18,14 +22,14 @@ function MyApp({ Component, pageProps }) {
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
   return(
-    <ThemeContext.Provider value={{theme, themeToggler, darkColors}}>
+    <ThemeContext.Provider value={{theme, themeToggler}}>
       
-    <ThemeProvider theme={themeMode}>
-      <GlobalStyle/>
-      <Header theme={theme} toggleTheme={themeToggler}/>
-      {/* <Toggle theme={theme} toggleTheme={themeToggler} /> */}
-      <Component {...pageProps} ></Component>
-    </ThemeProvider>
+      <ThemeProvider theme={themeMode}>
+        <GlobalStyle/>
+        <Header theme={theme} toggleTheme={themeToggler}/>
+        <Component {...pageProps} />
+      </ThemeProvider>
+
     </ThemeContext.Provider>
   
   )

@@ -1,9 +1,9 @@
-import { getFileBySlug, getFiles } from '../lib/mdx'
+import Head from 'next/head'
 import { MDXRemote } from 'next-mdx-remote' 
+import { getFileBySlug, getFiles } from '../lib/mdx'
+
 import MDXComponents from '../components/MDXComponents'
 import { BodyDiv, GeneralDiv, BodyGen } from '../styles/Global'
-import Head from 'next/head'
-import { GlobalStyle } from '../styles/GlobalStyle';
 
 
 export default function Post({ source, frontmatter }) {

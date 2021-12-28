@@ -1,10 +1,9 @@
 import React, { useContext } from 'react'
-import Link from 'next/link'
 import Image from 'next/image'
 import styled from 'styled-components';
+
 import { ThemeContext } from '../helpers/themeContext';
 
-import NextLink from "next/link";
 
 
 const StyledImage = styled(Image)`

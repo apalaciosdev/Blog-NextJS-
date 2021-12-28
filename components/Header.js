@@ -1,18 +1,17 @@
 import React, { useState, useEffect } from "react";
-
+import Link from "next/link";
+import Image from 'next/image'
 
 import { CSSTransition } from "react-transition-group";
-import Image from 'next/image'
 import Toggle from './Toggle';
 
-import Link from "next/link";
 
 export const Header = ({theme, toggleTheme}) => {
   const [isNavVisible, setNavVisibility] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 700px)");
+    const mediaQuery = window.matchMedia("(max-width: 800px)");
     mediaQuery.addListener(handleMediaQueryChange);
     handleMediaQueryChange(mediaQuery);
 
@@ -47,7 +46,7 @@ export const Header = ({theme, toggleTheme}) => {
         <nav className="Nav">
           <a><Link href="/"><a> Home </a></Link></a>
           <a><Link href="/articles"><a> Articles </a></Link></a>
-          <a><Link href="/"><a> About </a></Link></a>
+          <a><Link href="/contact"><a> Contact </a></Link></a>
           <span><Toggle theme={theme} toggleTheme={toggleTheme} /></span>
         </nav>
       </CSSTransition>
