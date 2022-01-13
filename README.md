@@ -49,7 +49,7 @@ For do this, add the next lines in your MDX file (without /* */):
 
 ```
 /*
-```jsx
+```js
 const text = 'Hello world!';
 
 console.log(text);
