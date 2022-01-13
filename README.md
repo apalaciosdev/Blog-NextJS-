@@ -19,9 +19,9 @@ If you want to include components in your posts, invoke them in your MDX file li
 And then add them in `/components/MDXComponents.js`.
 
 This is the result:
-<img src="/public/ignore/componentExample.png" alt="example" width="300"/>
-
+<img src="/public/images/ignore/componentExample.png" alt="example" width="500"/>
 <br /><br />
+
 
 ### 2.- Customize✔️
 Make it your own by adjusting the blog config file. Customize whatever you want.
@@ -29,15 +29,17 @@ Make it your own by adjusting the blog config file. Customize whatever you want.
 This project has styles created with Styled-Components and pure CSS.
 <br /><br />
 
+
 ### 3.- Appearance and design🎨
 This project contains a theme toggler which you can change the theme color between dark and light mode.
-(poner gif)
+<img src="/public/images/ignore/TogleTheme.gif" alt="example" width="500"/>
 
 Also, all this blog has created with responsive design.
 (poner imagen de iphone)
 
 Add more icons in the /public/images/icons directory to show in the Post List Item component.
 <br /><br />
+
 
 ### 4.- Add Syntax highlighting
 Syntax highlighting with Prism React Renderer.
