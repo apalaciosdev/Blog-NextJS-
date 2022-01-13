@@ -34,7 +34,7 @@ This project contains a theme toggler which you can change the theme color betwe
 <img src="/public/images/ignore/togleTheme.gif" alt="example" width="500"/><br />
 
 Also, all this blog has created with responsive design.
-(poner imagen de iphone)
+<img src="/public/images/ignore/phoneExample.gif" alt="example" width="200" height=500/>
 
 Add more icons in the /public/images/icons directory to show in the Post List Item component.
 <br /><br />
