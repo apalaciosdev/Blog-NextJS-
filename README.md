@@ -2,7 +2,7 @@
 This is a template blog created with NextJS using MDX.
 <br />
 
-<img src="/public/images/ignore/componentExample.png" alt="example" width="600"/>
+<img src="/public/images/ignore/blog.png" alt="example" width="600"/>
 
 
 
@@ -32,7 +32,7 @@ This project has styles created with Styled-Components and pure CSS.
 
 ### 3.- Appearance and design🎨
 This project contains a theme toggler which you can change the theme color between dark and light mode.<br />
-<img src="/public/images/ignore/togleTheme.gif" alt="example" width="500"/>
+<img src="/public/images/ignore/togleTheme.gif" alt="example" width="500"/><br />
 
 Also, all this blog has created with responsive design.
 (poner imagen de iphone)
