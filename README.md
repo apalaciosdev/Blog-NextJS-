@@ -10,14 +10,13 @@ This is a template blog created with NextJS using MDX.
 ### Add reutilizable components in your posts
 With MDX, you can use components directly in markdown.
 
-If you want to include components in your posts, invoke them like this:
+If you want to include components in your posts, invoke them in your MDX file like this:
 ```
 <MyComponent text="this is a prop" size="30px"/>
-
 ```
 
 And then add them in `/components/MDXComponents.js`.
-
+<br /><br />
 
 ### Customize
 Make it your own by adjusting the blog config file. Customize whatever you want.
