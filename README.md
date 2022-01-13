@@ -36,9 +36,6 @@ This project contains a theme toggler which you can change the theme color betwe
 
 Also, all this blog has created with responsive design.<br />
 <img src="/public/images/ignore/phoneExample.gif" alt="example" width="200" height=350/>
-
-
-Add more icons in the /public/images/icons directory to show in the Post List Item component.
 <br /><br />
 
 
