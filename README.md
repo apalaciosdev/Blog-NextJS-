@@ -18,7 +18,7 @@ If you want to include components in your posts, invoke them in your MDX file li
 
 And then add them in `/components/MDXComponents.js`.
 
-This is the result:
+This is the result:<br />
 <img src="/public/images/ignore/componentExample.png" alt="example" width="500"/>
 <br /><br />
 
@@ -31,8 +31,8 @@ This project has styles created with Styled-Components and pure CSS.
 
 
 ### 3.- Appearance and design🎨
-This project contains a theme toggler which you can change the theme color between dark and light mode.
-<img src="/public/images/ignore/TogleTheme.gif" alt="example" width="500"/>
+This project contains a theme toggler which you can change the theme color between dark and light mode.<br />
+<img src="/public/images/ignore/togleTheme.gif" alt="example" width="500"/>
 
 Also, all this blog has created with responsive design.
 (poner imagen de iphone)
