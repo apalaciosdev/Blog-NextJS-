@@ -2,9 +2,7 @@
 This is a template blog created with NextJS using MDX.
 <br />
 
-<img src="/public/images/ignore/blog.png" alt="example" width="600"/>
-
-
+<img src="/public/images/ignore/blog.png" alt="example" width="600" height=600/>
 
 ## Advantages of using this project
 
