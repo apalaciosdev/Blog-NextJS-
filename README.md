@@ -5,7 +5,7 @@ This is a template blog created with NextJS using MDX.
 <img src="/public/images/ignore/blog.png" alt="example" width="600" height=400/>
 <br /><br />
 
-## Advantages of using this project
+## Advantages using this project
 
 ### 1.- Add reutilizable components in your posts🚀
 With MDX, you can use components directly in markdown.<br />
