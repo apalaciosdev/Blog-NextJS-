@@ -32,9 +32,11 @@ This project has styles created with Styled-Components and pure CSS.
 ### 3.- Appearance and design🎨
 This project contains a theme toggler which you can change the theme color between dark and light mode.<br />
 <img src="/public/images/ignore/togleTheme.gif" alt="example" width="500"/><br />
+<br />
 
 Also, all this blog has created with responsive design.
-<img src="/public/images/ignore/phoneExample.gif" alt="example" width="200" height=500/>
+<img src="/public/images/ignore/phoneExample.gif" alt="example" width="200" height=350/>
+<br />
 
 Add more icons in the /public/images/icons directory to show in the Post List Item component.
 <br /><br />
