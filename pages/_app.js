@@ -5,12 +5,12 @@ import { useDarkMode } from '../helpers/useDarkMode';
 
 
 //Styles
-import { GlobalStyle } from '../styles/GlobalStyle';
-import { lightTheme, darkTheme } from '../styles/Themes';
+import { GlobalStyle } from '../styles/styledComponents/GlobalStyle';
+import { lightTheme, darkTheme } from '../styles/styledComponents/Themes';
 import {ThemeProvider} from "styled-components";
-import "../styles/prism-night-owl.css";
-import '../styles/ToggleButton.css'
-import "../styles/Header.css";
+import "../styles/css/prism-night-owl.css";
+import '../styles/css/ToggleButton.css'
+import "../styles/css/Header.css";
 
 
 
