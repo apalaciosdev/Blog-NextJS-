@@ -2,7 +2,8 @@
 This is a template blog created with NextJS using MDX.
 <br />
 
-<img src="/public/gifia-preview.gif?" alt="example" width="600"/>
+<img src="/public/ignore/componentExample.png" alt="example" width="600"/>
+
 
 
 ## Advantages of using this project
@@ -12,10 +13,14 @@ With MDX, you can use components directly in markdown.
 
 If you want to include components in your posts, invoke them in your MDX file like this:
 ```
-<MyComponent text="this is a prop" size="30px"/>
+<Podcast episode="2Nke3gndQfRHI1835BKlpL?utm_source=generator" size="compact"/>
 ```
 
 And then add them in `/components/MDXComponents.js`.
+
+This is the result:
+<img src="/public/ignore/componentExample.png" alt="example" width="300"/>
+
 <br /><br />
 
 ### 2.- Customize✔️
