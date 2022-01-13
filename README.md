@@ -7,7 +7,7 @@ This is a template blog created with NextJS using MDX.
 
 ## Advantages of using this project
 
-### Add reutilizable components in your posts
+### 1.- Add reutilizable components in your posts
 With MDX, you can use components directly in markdown.
 
 If you want to include components in your posts, invoke them in your MDX file like this:
@@ -18,13 +18,13 @@ If you want to include components in your posts, invoke them in your MDX file li
 And then add them in `/components/MDXComponents.js`.
 <br /><br />
 
-### Customize
+### 2.- Customize
 Make it your own by adjusting the blog config file. Customize whatever you want.
 
 This project has styles created with Styled-Components and pure CSS.
+<br /><br />
 
-
-### Appearance and design
+### 3.- Appearance and design
 This project contains a theme toggler which you can change the theme color between dark and light mode.
 (poner gif)
 
@@ -32,9 +32,9 @@ Also, all this blog has created with responsive design.
 (poner imagen de iphone)
 
 Add more icons in the /public/images/icons directory to show in the Post List Item component.
+<br /><br />
 
-
-### Add Syntax highlighting
+### 4.- Add Syntax highlighting
 Syntax highlighting with Prism React Renderer.
 
 You can add a Sintax highlight code in your articles.
@@ -51,7 +51,7 @@ console.log(text);
 ```
 
 If you want to customize the palette color, modify this file: `/styles/css/prism-night-owl`.
-
+<br /><br />
 
 
 ## Write your fist post
