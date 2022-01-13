@@ -1,34 +1,63 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NextJS blog with [MDX]
+This is a template blog created with NextJS using MDX.
+<br />
 
-## Getting Started
+<img src="/public/gifia-preview.gif?" alt="example" width="600"/>
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
+## Advantages of using this project
+
+### Add reutilizable components in your posts
+With MDX, you can use components directly in markdown.
+
+If you want to include components in your posts, invoke them like this:
+```
+<MyComponent text="this is a prop" size="30px"/>
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+And then add them in `/components/MDXComponents.js`.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### Customize
+Make it your own by adjusting the blog config file. Customize whatever you want.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+This project has styles created with Styled-Components and pure CSS.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+### Appearance and design
+This project contains a theme toggler which you can change the theme color between dark and light mode.
+(poner gif)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Also, all this blog has created with responsive design.
+(poner imagen de iphone)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Add more icons in the /public/images/icons directory to show in the Post List Item component.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Add Syntax highlighting
+Syntax highlighting with Prism React Renderer.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+You can add a Sintax highlight code in your articles.
+
+For do this, add the next lines in your MDX file (without /* */):
+
+```
+/*
+```jsx
+const text = 'Hello world!';
+
+console.log(text);
+```  */
+```
+
+If you want to customize the palette color, modify this file: `/styles/css/prism-night-owl`.
+
+
+
+## Write your fist post
+To write a new post, create a new .mdx file in `/data` directory.
+
+If you would like to add more data to your posts, such as author information or other meta data, add more fields to the front matter in your mdx files and add the field names to the getStaticProps function ubicated in `/pages/articles.js` file.
+
+
