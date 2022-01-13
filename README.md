@@ -7,7 +7,7 @@ This is a template blog created with NextJS using MDX.
 
 ## Advantages of using this project
 
-### 1.- Add reutilizable components in your posts
+### 1.- Add reutilizable components in your posts🚀
 With MDX, you can use components directly in markdown.
 
 If you want to include components in your posts, invoke them in your MDX file like this:
@@ -18,13 +18,13 @@ If you want to include components in your posts, invoke them in your MDX file li
 And then add them in `/components/MDXComponents.js`.
 <br /><br />
 
-### 2.- Customize
+### 2.- Customize✔️
 Make it your own by adjusting the blog config file. Customize whatever you want.
 
 This project has styles created with Styled-Components and pure CSS.
 <br /><br />
 
-### 3.- Appearance and design
+### 3.- Appearance and design🎨
 This project contains a theme toggler which you can change the theme color between dark and light mode.
 (poner gif)
 
@@ -54,7 +54,7 @@ If you want to customize the palette color, modify this file: `/styles/css/prism
 <br /><br />
 
 
-## Write your fist post
+## Write your fist post ✏️
 To write a new post, create a new .mdx file in `/data` directory.
 
 If you would like to add more data to your posts, such as author information or other meta data, add more fields to the front matter in your mdx files and add the field names to the getStaticProps function ubicated in `/pages/articles.js` file.
