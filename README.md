@@ -59,7 +59,7 @@ If you want to customize the palette color, modify this file: `/styles/css/prism
 <br /><br />
 
 
-## Write your fist post ✏️
+## Write your first post ✏️
 To write a new post, create a new .mdx file in `/data` directory.
 
 If you would like to add more data to your posts, such as author information or other meta data, add more fields to the front matter in your mdx files and add the field names to the getStaticProps function ubicated in `/pages/articles.js` file.
