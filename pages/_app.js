@@ -1,6 +1,5 @@
 import { Header } from '../components/Header';
 import { ThemeContext } from '../helpers/themeContext';
-import Toggle from '../components/Toggle';
 import { useDarkMode } from '../helpers/useDarkMode';
 
 
@@ -11,6 +10,7 @@ import {ThemeProvider} from "styled-components";
 import "../styles/css/prism-night-owl.css";
 import '../styles/css/ToggleButton.css'
 import "../styles/css/Header.css";
+import "../styles/css/PostListItem.css";
 
 
 
