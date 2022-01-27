@@ -35,7 +35,7 @@ export const Header = ({theme, toggleTheme}) => {
   return (
     <header className="Header">
 
-      <p className="Logo"> <Link href="/"><a> BlogStack </a></Link></p>
+      <p className="Logo"> <Link href="/"> BlogStack </Link></p>
       
       <CSSTransition
         in={!isSmallScreen || isNavVisible}
@@ -44,9 +44,9 @@ export const Header = ({theme, toggleTheme}) => {
         unmountOnExit
       >
         <nav className="Nav">
-          <a><Link href="/"><a> Home </a></Link></a>
-          <a><Link href="/articles"><a> Articles </a></Link></a>
-          <a><Link href="/contact"><a> Contact </a></Link></a>
+          <Link href="/"> Home </Link>
+          <Link href="/articles"> Articles </Link>
+          <Link href="/contact"> Contact </Link>
           <span><Toggle theme={theme} toggleTheme={toggleTheme} /></span>
         </nav>
       </CSSTransition>
