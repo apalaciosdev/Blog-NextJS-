@@ -1,8 +1,6 @@
 import React, { useContext } from "react"
 import Image from "next/image"
 
-import { ThemeContext } from "../helpers/themeContext"
-
 export const PostListItem = ({ title, date, languaje }) => {
 
   return (

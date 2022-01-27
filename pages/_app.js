@@ -1,5 +1,5 @@
 import { Header } from '../components/Header';
-import { ThemeContext } from '../helpers/themeContext';
+import { ThemeContext } from '../helpers/ThemeContext';
 import { useDarkMode } from '../helpers/useDarkMode';
 
 
