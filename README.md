@@ -1,4 +1,4 @@
-# NextJS blog with [MDX]
+# Welcome to <a href="https://nextjs-blog-apalacios.netlify.app/post-1">GIFIA</a>NextJS blog with [MDX]!
 This is a template blog created with NextJS using MDX.
 <br />
 
@@ -64,4 +64,4 @@ To write a new post, create a new .mdx file in `/data` directory.
 
 If you would like to add more data to your posts, such as author information or other meta data, add more fields to the front matter in your mdx files and add the field names to the getStaticProps function ubicated in `/pages/articles.js` file.
 
-
+<a href="https://nextjs-blog-apalacios.netlify.app/articles">Go to the site</a>
