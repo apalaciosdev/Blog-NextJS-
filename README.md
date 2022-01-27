@@ -1,4 +1,4 @@
-# Welcome to <a href="https://nextjs-blog-apalacios.netlify.app/post-1">GIFIA</a>NextJS blog with [MDX]!
+# Welcome to <a href="https://nextjs-blog-apalacios.netlify.app/post-1">NextJS blog with [MDX]</a>!
 This is a template blog created with NextJS using MDX.
 <br />
 
