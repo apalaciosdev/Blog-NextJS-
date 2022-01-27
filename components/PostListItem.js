@@ -1,6 +1,9 @@
-import React, { useContext } from "react"
-import Image from "next/image"
+import React, { useContext } from 'react'
+import Image from 'next/image'
 import styled from 'styled-components';
+
+import { ThemeContext } from '../helpers/ThemeContext';
+
 
 
 const StyledImage = styled(Image)`
@@ -30,17 +33,15 @@ const StyledDiv = styled.div`
 `
 
 
-export const PostListItem = ({ title, date, languaje }) => {
+
+export const PostListItem = ({ title, date, languaje}) => {
+
+  const {theme} = useContext(ThemeContext)
+
   return (
-    <StyledDiv >
-      <StyledImage 
-        src={`/images/icons/${languaje}.png`}
-        alt="Logo"
-        width={40}
-        height={40}
-        className="StyledImage"
-      />
+    <StyledDiv theme={theme}>      
+      <StyledImage src={`/images/icons/${languaje}.png`} alt='Logo' width={40} height={40}/>
       <StyledH3> {title} </StyledH3>
     </StyledDiv>
-  )
-}
+  );
+};
