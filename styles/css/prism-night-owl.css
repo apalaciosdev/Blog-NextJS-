@@ -161,4 +161,11 @@
    font-style: italic;
  }
 
+ code::selection {
+    color: #3399FF;
+ }
+ 
+ span::selection {
+  color: #3399FF;
+ }
  
