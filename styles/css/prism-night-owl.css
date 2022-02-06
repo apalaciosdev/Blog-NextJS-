@@ -37,7 +37,7 @@
  code[class*="language-"]::-moz-selection,
  code[class*="language-"] ::-moz-selection {
    text-shadow: none;
-   background: #2D2D2D;
+   background: #23272E;
  }
  
  pre[class*="language-"]::selection,
@@ -45,7 +45,7 @@
  code[class*="language-"]::selection,
  code[class*="language-"] ::selection {
    text-shadow: none;
-   background: #2D2D2D;
+   background: #23272E; 
  }
  
  @media print {
@@ -65,7 +65,7 @@
  :not(pre) > code[class*="language-"],
  pre[class*="language-"] {
    color: white;
-   background: #2D2D2D;
+   background: #23272E;
  }
  
  :not(pre) > code[class*="language-"] {
