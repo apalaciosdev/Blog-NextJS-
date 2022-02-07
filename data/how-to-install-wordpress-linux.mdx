@@ -1,0 +1,213 @@
+---
+title: 'How to install Wordpress on Linux'
+date: '2022-02-05'
+languaje: 'wordpress'
+---
+
+# How to install Wordpress on Linux
+
+Things we are going to do:
+  - Install Apache
+  - Install MySQL
+  - Install PHP
+  - Install PHPMyAdmin (optional)
+  - Install Wordpress
+  - Configure Wordpress
+
+
+## Install Apache
+First we need to install Apache.
+```shell
+sudo apt update
+sudo apt install apache2
+```
+<br/>
+
+Allow http and https traffic from apache.
+```shell
+sudo ufw allow in "Apache Full"
+```
+<br/>
+
+
+## Install MySQL
+Let's install MySQL.
+```shell
+sudo apt install mysql-server
+```
+<br/>
+
+Once the installation is finished we enter in SQL for configure the 'root' user.
+```shell
+sudo mysql
+```
+<br/>
+
+Configure the 'root' user and save the changes.
+```sql
+mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Password';
+
+mysql> FLUSH PRIVILEGES;
+
+mysql> exit
+```
+<br/>
+
+
+## Install PHP
+To display dynamic content, you will need PHP.
+```shell
+sudo apt install php libapache2-mod-php php-mysql
+
+sudo apt install php-curl php-gd php-xml php-mbstring  php-xmlrpc php-zip php-soap php-intl
+```
+<br/>
+
+
+## Install PHPMyAdmin
+Now we are going to install PHPMyAdmin (this is optional, but it is recommended to install it).
+```shell
+sudo apt install phpmyadmin php-mbstring
+```
+<br/>
+
+During the installation of PHPMyAdmin will appear a window that task us if we are using 'Apache2' or 'Lighttpd'. Select 'Apache2' and continue.
+
+After this, you will be prompted to use dbconfig-common, select YES.
+
+Introduce your root password configurated before in the MySQL installation.
+<br/>
+
+Lastly, enable the mbstring extension and restart Apache.
+Now we are going to install PHPMyAdmin (this is optional, but it is recommended to install it).
+```shell
+sudo phpenmod mbstring
+
+sudo service apache2 restart
+```
+<br/>
+
+
+## Install WordPress on Linux
+Before install Wordpress, we have to create the database.
+```shell
+sudo mysql
+
+mysql> CREATE DATABASE wordpress-database;
+
+mysql> exit
+```
+Now, we can start.
+<br/>
+
+
+First, we need to download Wordpress.
+
+Go to Desktop or whatever directory you want and download Wordpress.
+```shell
+cd /Desktop 
+
+curl -O https://wordpress.org/latest.tar.gz
+```
+If you want, download Wordpress manually: https://wordpress.org/latest.tar.gz
+<br/>
+
+
+Extract the file using this command and move the file extracted to the next path:
+```shell
+tar xzvf latest.tar.gz
+
+sudo mv /wordpress /var/www/html/wordpress
+
+sudo chmod 755 /var/www/html/wordpress
+```
+<br/>
+
+
+Change the name of the Wordpress Config file:
+```shell
+cd /var/www/html/wordpress
+
+sudo mv wp-config-sample.php wp-config.php
+
+sudo chmod 755 /var/www/html/wordpress
+```
+<br/>
+
+
+Open the file with an editor:
+```shell
+sudo nano wp-config.php
+```
+<br/>
+
+
+Add or replace the next lines:
+```shell
+/** The name of the database for WordPress */
+define( 'DB_NAME', 'name of the database that we created before(wordpress-database)' );
+
+/** Database username */
+define( 'DB_USER', 'root' );
+
+/** Database password */
+define( 'DB_PASSWORD', 'password configurated before in the MySQL installation' );
+
+/** Database hostname */
+define( 'DB_HOST', 'localhost' );
+
+/** Database charset to use in creating database tables. */
+define( 'DB_CHARSET', 'utf8' );
+
+/** The database collate type. Don't change this if in doubt. */
+define( 'DB_COLLATE', '' );
+
+```
+![Example](/images/assets/how-to-install-wordpress-linux/wordpress1.png)
+<br/>
+
+
+Next execute this command and copy the result:
+```shell
+curl -s https://api.wordpress.org/secret-key/1.1/salt/
+```
+<br/>
+
+
+Paste it inside the config file (replace before the existing lines):
+```shell
+sudo nano wp-config.php
+
+//drop these lines:
+define( 'AUTH_KEY',         'put your unique phrase here' );
+define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
+define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
+define( 'NONCE_KEY',        'put your unique phrase here' );
+define( 'AUTH_SALT',        'put your unique phrase here' );
+define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
+define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
+define( 'NONCE_SALT',       'put your unique phrase here' );
+
+//and paste the content of your clipboard.
+```
+![Example](/images/assets/how-to-install-wordpress-linux/wordpress2.png)
+<br/>
+
+
+Save changes and restart Apache.
+```shell
+sudo service apache2 reload
+```
+<br/>
+
+
+Check that it works by going to the following link in the browser: `http://localhost/wordpress`.
+
+
+
+
+
+
+
+
+
